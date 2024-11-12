@@ -1,0 +1,12 @@
+name: "Trigger Dependabot Updates"
+
+on:
+  workflow_dispatch: # Allows manual triggering from the Actions tab
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Dependabot Updates
+        uses: dependabot/fetch-metadata@v1
